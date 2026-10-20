@@ -68,3 +68,5 @@ with tab2:
 
 st.divider()
 st.caption("Privacy: file contents are not read or uploaded. Optional Ollama requests contain filenames only.")
+
+# starter file updated
