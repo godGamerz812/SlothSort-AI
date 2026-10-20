@@ -11,7 +11,7 @@ st.info("Review the proposed organization first. This starter version never move
 
 with st.sidebar:
     st.header("AI settings")
-    use_ollama = st.toggle("Use local Ollama model", value=False)
+    use_ollama = st.toggle("Use local Ollama model (recommended)", value=True)
     model = st.text_input("Model", "gemma3:1b", disabled=not use_ollama)
     ollama_url = st.text_input("Ollama URL", os.getenv("OLLAMA_HOST", "http://localhost:11434"), disabled=not use_ollama)
     st.caption("The Ollama endpoint must be reachable from the machine running Streamlit.")
